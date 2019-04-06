@@ -1,0 +1,15 @@
+DNA Pride!
+for _ in range(int(input())):
+    N=int(input())
+    st = str(input())
+    if 'U' in st:
+        print('Error RNA nucleobases found!')
+    else:
+        lst = st.replace('A','X')
+        rst = lst.replace('T','A')
+        rst = rst.replace('X','T')
+        pst = rst.replace('G','X')
+        mst = pst.replace('C','G')
+        mst = mst.replace('X','C')
+        print(mst)
+        
